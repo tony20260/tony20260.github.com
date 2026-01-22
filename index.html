@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Woheng Metal - Company News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Header 区域 */
+        header {
+            background-color: #fff;
+            padding: 2rem 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 320px;
+            margin: 0 auto 1.5rem;
+            display: block;
+        }
+
+        /* 社交媒体导航 */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #2c3e50;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .social-links img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* 主要内容区域 */
+        .container {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .announcement-section {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .announcement-section h1 {
+            color: #e74c3c;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 2px solid #e74c3c;
+            padding-bottom: 0.5rem;
+        }
+
+        .announcement-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .announcement-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .announcement-date {
+            color: #7f8c8d;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .announcement-title {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .announcement-content {
+            color: #555;
+        }
+
+        /* 联系信息区域 */
+        .contact-section {
+            background-color: #fff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-section h2 {
+            color: #2c3e50;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .contact-item img {
+            width: 24px;
+            height: 24px;
+        }
+
+        .contact-item a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* 页脚 */
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 3rem;
+        }
+
+        /* 响应式适配 */
+        @media (max-width: 768px) {
+            .social-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .announcement-section, .contact-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="woheng-logo.png" alt="WOheng Metal Logo" class="logo">
+        <nav class="social-links">
+            <a href="https://www.facebook.com/wohengmetal" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook">
+                Facebook
+            </a>
+            <a href="https://www.linkedin.com/in/alik-zhang" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                LinkedIn
+            </a>
+            <a href="https://x.com/Alik_Zhang" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X (Twitter)">
+                X (Twitter)
+            </a>
+            <a href="https://www.tiktok.com/@alik.wohengmetal" target="_blank" rel="noopener noreferrer">
+                <img src="https://cdn-icons-png.flaticon.com/512/3670/3670126.png" alt="TikTok">
+                TikTok
+            </a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="announcement-section">
+            <h1>📢 Company News</h1>
+            <div class="announcement-item">
+                <div class="announcement-date">January 20, 2026</div>
+                <h3 class="announcement-title">Woheng Metal Releases New Development Plan for 2026</h3>
+                <p class="announcement-content">Woheng Metal officially released the new development plan for 2026, adhering to the business philosophy of quality-oriented and customer first. The company will increase investment in product R & D and continue to provide high-quality building metal products and services for the construction industry.</p>
+            </div>
+  <div class="announcement-item">
+                <div class="announcement-date">December 25, 2025</div>
+                <h3 class="announcement-title">Woheng Metal Holds Annual Customer Exchange Conference</h3>
+                <p class="announcement-content">Woheng Metal successfully held the annual customer exchange conference in Xianxian, Hebei. The conference focused on product innovation and industry development trends, and conducted in-depth communication with customers to listen to demands and further optimize product and service solutions.</p>
+            </div>
+ <div class="announcement-item">
+                <div class="announcement-date">November 20, 2025</div>
+                <h3 class="announcement-title">Woheng Metal Establishes Long-term Cooperation with Multiple Construction Enterprises</h3>
+                <p class="announcement-content">Relying on high-quality products and perfect service system, Woheng Metal has signed long-term cooperation agreements with multiple well-known construction enterprises, covering the supply of mobile scaffolding, ringlock scaffolding and other series of products.</p>
+            </div>
+<div class="announcement-item">
+                <div class="announcement-date">October 18, 2025</div>
+                <h3 class="announcement-title">Woheng Metal Completes the Upgrade of Steel Plank Production Line</h3>
+                <p class="announcement-content">Woheng Metal has completed the technical upgrade of the steel plank production line, which not only improves the production efficiency of steel planks but also optimizes the product structure to make it more adaptable to the diverse needs of construction sites.</p>
+            </div>
+<div class="announcement-item">
+                <div class="announcement-date">September 20, 2025</div>
+                <h3 class="announcement-title">Woheng Metal's Forged Fasteners Win High Praise from Large Construction Projects</h3>
+                <p class="announcement-content">The forged fasteners independently produced by Woheng Metal have been widely used in several large-scale construction projects in North China. The products have been highly recognized by customers for their stable performance and reliable quality, and have received a number of repeat orders.</p>
+            </div>
+            <div class="announcement-item">
+                <div class="announcement-date">August 15, 2025</div>
+                <h3 class="announcement-title">Woheng Metal Expands After-sales Service Team</h3>
+                <p class="announcement-content">Woheng Metal has expanded its after-sales service team with professional training for new members. The upgraded team can respond to customer needs more quickly, solve product use problems in a timely manner, and further improve the quality of after-sales service.</p>
+            </div>
+            <div class="announcement-item">
+                <div class="announcement-date">July 16, 2025</div>
+                <h3 class="announcement-title">Woheng Metal Launches One-stop Product Consulting Service</h3>
+                <p class="announcement-content">To implement the service concept of customer first, Woheng Metal officially launches a one-stop product consulting service. Professional consultants provide targeted solutions for customers from product selection, quotation to matching suggestions, effectively improving the efficiency of customer cooperation.</p>
+            </div>
+  <div class="announcement-item">
+                <div class="announcement-date">June 10, 2025</div>
+                <h3 class="announcement-title">Woheng Metal Optimizes Product Quality Inspection System</h3>
+                <p class="announcement-content">Xianxian Woheng Metal Products Co., Ltd. has fully upgraded its product quality inspection system, adding multiple strict detection links for ringlock scaffolding, steel supports and other core products. The upgraded system further ensures the excellent quality of products and lays a solid foundation for serving various construction projects.</p>
+            </div>
+
+        </section>
+
+        <section class="contact-section">
+            <h2>📞 Contact Us</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+                    <span>WhatsApp: <a href="https://wa.me/8617736968668" target="_blank" rel="noopener noreferrer">+86 177-3696-8668</a></span>
+                </div>
+                <div class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email">
+                    <span>Email: <a href="mailto:info@wohengmetal.cc.cd">info@wohengmetal.cc.cd</a></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Woheng Metal. All rights reserved.</p>
+    </footer>
+</body>
+</html>
